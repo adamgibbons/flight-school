@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info">
+    <section class="hero">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
@@ -14,7 +14,7 @@
             </div>
             <div class="column">
               <form>
-                <p>Start your application now</p>
+                <p>Get started today!</p>
 
                 <section>
                   <!-- <b-checkbox v-model="hasError">Show errors</b-checkbox> -->
@@ -73,7 +73,7 @@
 
     <!-- value props -->
     <section class="section">
-      <div class="columns is-mobile">
+      <div class="columns">
         <card
           title="Free"
           icon="github-circle"
@@ -106,22 +106,51 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
+        <div class="columns">
+          <div class="column">
+            <h1 class="title">Section 1</h1>
+            <h2 class="subtitle">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            </h2>            
+          </div>
+          <div class="column">
+            <img src="https://osmaviation.com/app/uploads/2018/06/24131305_10155971074998967_883996193735898811_n_c4yogu-850x494.jpg">
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <img src="https://epicflightacademy.com/wp-content/uploads/2018/03/commercial-pilot-e1520909294533.jpg">
+          </div>
+          <div class="column">
+            <h1 class="title">Section 2</h1>
+            <h2 class="subtitle">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            </h2>            
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title">Section 3</h1>
+            <h2 class="subtitle">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            </h2>            
+          </div>
+          <div class="column">
+            <img src="https://images.wsj.net/im-2890?width=620&aspect_ratio=1.5">
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -142,23 +171,35 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .hero {
   background: url('~assets/jet.jpg') left no-repeat;
   background-size: cover;
 }
-.title {
-  font-size: 3em;
+.hero .title {
+  font-size: 4em;
+  color: white;
 }
-.subtitle {
-  font-size: 1.5em;
+.hero .subtitle {
+  font-size: 2em;
+  color: black;
 }
 form {
+  border-radius: 10px;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+form p {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
 b-field {
   color: white;
+}
+form .label {
+  color: white !important;
 }
 </style>

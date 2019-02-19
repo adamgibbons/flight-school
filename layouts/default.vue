@@ -11,7 +11,7 @@
           href="/"
         >
           <img
-            src="~assets/buefy.png"
+            src="~assets/logo.png"
             alt="Buefy"
             height="28"
           >
@@ -49,11 +49,15 @@
         <nuxt />
       </div>
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
+
 export default {
+  components: { Footer },
   data() {
     return {
       items: [

@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar header has-shadow is-primary"
+      class="navbar header has-shadow is-transparent"
       role="navigation"
       aria-label="main navigation"
     >
@@ -11,10 +11,11 @@
           href="/"
         >
           <img
-            src="~assets/buefy.png"
+            src="~assets/logo.png"
             alt="Buefy"
             height="28"
           >
+          <span class="navbar-text">American Flight School Advisors</span>
         </a>
 
         <div class="navbar-burger">
@@ -27,11 +28,15 @@
 
     <nuxt />
 
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
+
 export default {
+  components: { Footer },
   data() {
     return {
       items: [
@@ -50,3 +55,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.navbar-text {
+  margin-left: 0.5em;
+  font-size: 1.5em;
+}
+</style>
